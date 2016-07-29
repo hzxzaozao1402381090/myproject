@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Camera/Camera.iml" filepath="$PROJECT_DIR$/Camera/Camera.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Download/Download.iml" filepath="$PROJECT_DIR$/Download/Download.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MyApplication.iml" filepath="$PROJECT_DIR$/MyApplication.iml" />
+      <module fileurl="file://$PROJECT_DIR$/pagerslidingtap/pagerslidingtap.iml" filepath="$PROJECT_DIR$/pagerslidingtap/pagerslidingtap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/test/test.iml" filepath="$PROJECT_DIR$/test/test.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zaozao.camera.MainActivity">
+
+   <!--<Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:onClick="start"
+       android:text="启动系统相机"/>-->
+   <com.zaozao.camera.MySurfaceView2
+       android:id="@+id/surface"
+       android:layout_width="match_parent"
+       android:layout_height="match_parent" />
+   <RelativeLayout
+       android:id="@+id/relative"
+       android:layout_gravity="bottom"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+   <Button
+       android:onClick="Cancel"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="取消"
+       android:layout_alignParentLeft="true"/>
+   <Button
+       android:onClick="Save"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="保存"
+       android:layout_alignParentRight="true"/>
+   </RelativeLayout>
+</FrameLayout>

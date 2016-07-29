@@ -1,0 +1,1 @@
+include ':pagerslidingtap', ':Camera', ':test', ':Download'
