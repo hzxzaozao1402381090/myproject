@@ -1,13 +1,18 @@
 package com.zaozao.download;
 
+import android.app.Activity;
+
 import com.yolanda.nohttp.NoHttp;
 import com.yolanda.nohttp.download.DownloadQueue;
+import com.yolanda.nohttp.rest.Request;
 import com.yolanda.nohttp.rest.RequestQueue;
 
 /**
  * Created by 胡章孝 on 2016/7/29.
  */
 public class CallServer {
+
+
 
     private static CallServer callServer;
     /**
@@ -35,5 +40,15 @@ public class CallServer {
             downloadQueue = NoHttp.newDownloadQueue();
         }
         return downloadQueue;
+    }
+
+    /**
+     * 添加一个请求到请求队列
+     * @param what 请求类别
+     * @param request 请求对象
+     * @param activity 请求回调的Activity
+     */
+    public void add(int what, Request request,Activity activity){
+        requestQueue.add(what,request,new HttpResponseListener(activity));
     }
 }
